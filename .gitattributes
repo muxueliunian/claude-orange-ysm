@@ -1,0 +1,10 @@
+# 模型与工程文件按原样存储：禁止换行符自动转换
+# 否则本地 CRLF 会被存成 LF，CI 检出后打出的包与本地包不一致
+* -text
+
+# 文本文件仍按文本显示 diff
+*.json diff
+*.md   diff
+*.txt  diff
+*.yml  diff
+*.py   diff
