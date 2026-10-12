@@ -1,0 +1,51 @@
+Claude · 暖橙长裙 — YSM 模型
+版本：0.2.1-audiofree（2026-10-13）
+状态：公开发布版（仓库 tag v0.2.1）；本包不含音频，说明见 作者与来源.txt。
+
+这是 Java 版 Yes Steve Model 的立体玩家模型，不是原版皮肤 PNG，也不是基岩版附加包。
+已在用户的 Windows 11 / Minecraft 1.21.1 / NeoForge 21.1.217 / YSM 2.6.5 环境中使用并获得外观反馈。
+其它游戏、加载器或 YSM 版本未做此模型的兼容验收。
+
+内容：无头饰、暖橙配色、普通人耳、无尾巴、加长裙、分层长发、30 根骨骼的弹性摆动、琥珀棕瞳、原眨眼及动作、围裙花形标志。
+所需运行环境：Minecraft、匹配版本的加载器和 YSM。
+XiaokeLite、Iris、Voxy 和 Blender 均不是使用此模型的必要条件。它们不随包分发。
+拔刀剑、枪械、女仆动画文件是保留的可选适配，不代表必须安装这些模组。
+本版已删除 sounds/ 全部音频，包内不含任何 OGG；舞蹈动作照常能跳，只是没有 BGM。
+
+单人安装（推荐文件夹方式，模型 ID 与现有版本一致）：
+1. 找到实际游戏目录，即同时含 mods、config 的目录；Prism 实例内可能名为 minecraft。
+2. 备份原 config/yes_steve_model/custom/claude_orange 文件夹，放到 custom 之外。
+3. 将本项目 claude_orange 文件夹复制到 config/yes_steve_model/custom/。
+4. 确认路径为 custom/claude_orange/ysm.json，不能多套一层同名文件夹。
+5. 进入游戏执行 /ysm model reload；无权限时退出存档再进入，仍不更新则重启游戏。
+6. 按键设置中找到「是，史蒂夫模型 → 打开玩家模型界面」，在菜单搜索 Claude 并自行选择。
+
+压缩包安装：
+dist/claude_orange.zip 是可直接放入 custom 的单模型包，根目录是 ysm.json。
+文件夹与 ZIP 二选一，避免菜单出现重复项。改用 ZIP 后菜单条目/模型 ID 可能不同，需要重新选择。
+外层工程归档不是可直接装入 custom 的模型 ZIP，请先解压找到 dist/claude_orange.zip。
+不要改扩展名冒充 .ysm；本包是标准 JSON/PNG 工程的 ZIP（0.2.1-audiofree 起不含任何音频）。
+
+服务器：
+将模型文件夹或单模型 ZIP 放入服务器 config/yes_steve_model/custom，再在控制台执行 ysm model reload。
+玩家客户端也应使用匹配的 YSM。服务器授权和选择模型由服务器管理员处理。
+
+重新打包：
+安装 Python 3.10 或以上，在本目录运行 python tools/build.py。
+只用 Python 标准库，不依赖原来的工作区或绝对路径，不会修改游戏或自动上传。
+脚本检查引用、骨骼层级、JSON 和 PNG 尺寸，并逐字节对比 ZIP 内容，不计算哈希。
+
+编辑：
+claude_orange/models 为 Bedrock 几何，animations 为动画，controller 为控制器。
+保持主/手臂 UV 的 512×2048 坐标空间；实际 PNG 为 1024×4096。
+第四页含独立围裙、眼睛和脸颊区域，不能直接裁成正方形贴图。
+保留骨骼名称和父子关系，否则眨眼、表情及适配动作可能失效。
+本包没有附旧 .blend 文件；旧预览文件未全部同步到此最终贴图版本。
+
+已知限制：
+头发为骨骼弹性摆动，没有发丝碰撞；复杂动作、游泳、鞘翅和睡姿仍需完整回归。
+外观已经有游戏内反馈；本发布版不含音频，轮盘里的舞蹈没有 BGM。模组适配尚未逐项验收。
+使用光影时颜色随照明变化；窗口掉帧不是本模型已确诊的问题。
+
+使用前请阅读 作者与来源.txt 和仓库根目录的 README.md / LICENSE.md。
+YSM 官方说明：https://yesstevemodel.github.io/wiki/install/

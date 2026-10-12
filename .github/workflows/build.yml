@@ -1,0 +1,41 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 校验并打包
+        run: python tools/build.py
+
+      - name: 上传构建产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: claude_orange
+          path: dist/claude_orange.zip
+
+      - name: 打 tag 时创建 Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          TAG="${GITHUB_REF_NAME}"
+          gh release view "$TAG" >/dev/null 2>&1 || \
+            gh release create "$TAG" --title "$TAG" --notes-file 更新记录.txt
+          gh release upload "$TAG" dist/claude_orange.zip --clobber

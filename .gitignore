@@ -1,0 +1,6 @@
+# 构建产物（发布时作为 Release 附件，不进版本库）
+dist/
+
+# Python
+__pycache__/
+*.pyc

@@ -1,0 +1,26 @@
+原始工程：DeepSeek 鲸鱼娘（ds_whale）。
+原 ysm.json 署名：Maks（模型）；Ykisan（动画）。原头像、署名及授权字段均保留。
+原授权字段原文：type = "All Right Reserved"；desc = "保留所有权利"。
+本地改造署名：muxueliunian（二创改造）；本整理包不冒充完全原创模型。
+本说明不是替原作者签发的新许可证。
+
+本地改动：暖橙材质、去鳍耳及尾巴、长裙、后发造型、胸前发束、YSM 二阶弹性参数、围裙标志、琥珀棕眼睛及脸颊。
+围裙、虹膜、脸颊局部使用内置图像生成工具辅助制作，再经贴图集装配；保留了大量原模型几何、贴图和动画。
+Claude 名称与标志用于非官方拟人二创，本项目未声称得到 Anthropic 官方授权或认可。
+
+0.2.0 梗道具的文字参考（只借用梗的说法，没有打入任何图片）：
+Claude娘表情包合集（「你说得对」「Claude券壹亿」「已思考28分56秒」「封号」等）：https://aigengtu.com/Claude%E5%A8%98
+"You're absolutely right!" 梗：https://www.gigazine.net/gsc_news/en/20250814-claude-absolutely-right
+字幕用 Windows 自带的微软雅黑渲染进贴图；卡面放射花标和橘子为手工像素绘制。
+
+造型参考（没有将参考插画原图打入本包）：
+Claude 拟人立绘·橘白礼服ver，蓝色大肥鱼非官方同人整理站，原作者未标注：
+https://xn--pssy23gqgbz2d718b.com/zh-hant/works/claude202610030001.html
+
+运行依赖 Yes Steve Model（不随包分发）：
+https://modrinth.com/mod/yes-steve-model
+物理接口说明：https://yesstevemodel.github.io/wiki/molang/ref/
+
+音频：0.2.1-audiofree 起已删除 sounds/ 全部 14 个 OGG，本包不含任何音频。
+原工程 14 个 OGG 里只有 get_down、zufolo_impazzito 被实际引用（分别是 getdown 36 秒、乱舞 23 秒的舞蹈 BGM），其余 12 个无任何 JSON 引用；但因全部音频的作者与再分发授权都无法确认，故整体移除。带音频的 v0.2.0-local 仅限本地自用，不随本包分发。
+公开发布准备仍须处理几何/贴图/动画的改造与分发许可；音频一项在本版已通过移除规避。

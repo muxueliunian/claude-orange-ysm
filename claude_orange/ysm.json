@@ -1,0 +1,221 @@
+{
+  "spec": 2,
+  "metadata": {
+    "authors": [
+      {
+        "avatar": "avatar/Maks.png",
+        "comment": "lowpoly artist",
+        "contact": {
+          "qq": "858346554"
+        },
+        "name": "Maks",
+        "role": "模型"
+      },
+      {
+        "avatar": "avatar/Ykisan.png",
+        "comment": "  Ykiykiykiyki",
+        "name": "Ykisan",
+        "role": "动画"
+      },
+      {
+        "comment": "暖橙长裙二创：材质、造型与贴图改造",
+        "name": "muxueliunian",
+        "role": "二创改造"
+      }
+    ],
+    "license": {
+      "desc": "保留所有权利",
+      "type": "All Right Reserved"
+    },
+    "link": {
+      "donate": "https://afdian.com/a/ysmmod",
+      "home": "https://modrinth.com/mod/yes-steve-model"
+    },
+    "name": "Claude · 暖橙长裙（人耳·无尾）",
+    "tips": "Claude 暖橙长裙 · 0.2.1-audiofree\nB站同人设定的 Claude 娘：橘发、知性学者风，口头禅「你说得对」，偶尔一本正经地胡说。\n无头饰、普通人耳、无尾巴、分层长发与弹性摆动、琥珀棕瞳、围裙放射花形标志。\n本版不含音频，舞蹈没有 BGM。\n二创：muxueliunian。基于鲸鱼娘工程改造，保留原作者署名（Maks·模型 / Ykisan·动画）。"
+  },
+  "properties": {
+    "width_scale": 0.7,
+    "height_scale": 0.7,
+    "extra_animation": {
+      "RESET": "#设置",
+      "#日常类": "日常类动画",
+      "#舞蹈类": "舞蹈类动画"
+    },
+    "extra_animation_buttons": [
+      {
+        "id": "设置",
+        "name": "大小设置",
+        "config_forms": [
+          {
+            "type": "range",
+            "title": "X大小",
+            "description": "X大小",
+            "value": "v.sizex",
+            "step": 0.1,
+            "min": -0.9,
+            "max": 3.0
+          },
+          {
+            "type": "range",
+            "title": "Y大小",
+            "description": "Y大小",
+            "value": "v.sizey",
+            "step": 0.1,
+            "min": -0.9,
+            "max": 3.0
+          },
+          {
+            "type": "range",
+            "title": "Z大小",
+            "description": "Z大小",
+            "value": "v.sizez",
+            "step": 0.1,
+            "min": -0.9,
+            "max": 3.0
+          },
+          {
+            "type": "range",
+            "title": "头大小",
+            "description": "头部大小",
+            "value": "v.sizehead",
+            "step": 0.1,
+            "min": -0.2,
+            "max": 1.0
+          },
+          {
+            "type": "range",
+            "title": "X位置",
+            "description": "X位置",
+            "value": "v.posx",
+            "step": 1.0,
+            "min": -10.0,
+            "max": 10.0
+          },
+          {
+            "type": "range",
+            "title": "Y位置",
+            "description": "Y位置",
+            "value": "v.posy",
+            "step": 1.0,
+            "min": -10.0,
+            "max": 10.0
+          },
+          {
+            "type": "range",
+            "title": "Z位置",
+            "description": "Z位置",
+            "value": "v.posz",
+            "step": 1.0,
+            "min": -10.0,
+            "max": 10.0
+          },
+          {
+            "type": "range",
+            "title": "X旋转",
+            "description": "X旋转",
+            "value": "v.rotx",
+            "step": 5.0,
+            "min": -180.0,
+            "max": 180.0
+          },
+          {
+            "type": "range",
+            "title": "Y旋转",
+            "description": "Y旋转",
+            "value": "v.roty",
+            "step": 5.0,
+            "min": -180.0,
+            "max": 180.0
+          },
+          {
+            "type": "range",
+            "title": "Z旋转",
+            "description": "Z旋转",
+            "value": "v.rotz",
+            "step": 5.0,
+            "min": -180.0,
+            "max": 180.0
+          },
+          {
+            "type": "checkbox",
+            "title": "行走样式切换",
+            "description": "切换行走的样式",
+            "value": "v.walk"
+          }
+        ]
+      }
+    ],
+    "extra_animation_classify": [
+      {
+        "id": "日常类",
+        "extra_animation": {
+          "token": "Claude券壹亿！",
+          "怒了": "你说得对",
+          "摸鱼": "等额度",
+          "骄傲": "骄傲",
+          "思考": "思考",
+          "侧躺": "侧躺",
+          "吃饭": "吃橘子",
+          "趴": "趴",
+          "鸭子坐": "鸭子坐",
+          "招手1": "招手1",
+          "招手2": "招手2",
+          "无奈": "无奈",
+          "拒绝": "检测到中国人，已封号！",
+          "鼓掌": "鼓掌",
+          "点头": "点头",
+          "摇头": "摇头",
+          "卖萌": "卖萌",
+          "御笔摇": "御笔摇",
+          "坐": "坐"
+        }
+      },
+      {
+        "id": "舞蹈类",
+        "extra_animation": {
+          "pokedance": "pokedance",
+          "老鼠舞": "老鼠舞",
+          "sadcat": "sadcat舞",
+          "doodle": "doodle摇",
+          "加州女孩": "加州女孩",
+          "奇怪の舞": "奇怪の舞",
+          "getdown": "getdown",
+          "乱舞": "乱舞"
+        }
+      }
+    ],
+    "default_texture": "default",
+    "preview_animation": "gui",
+    "free": true,
+    "render_layers_first": false,
+    "all_cutout": false,
+    "disable_preview_rotation": true,
+    "gui_no_lighting": false,
+    "merge_multiline_expr": false
+  },
+  "files": {
+    "player": {
+      "model": {
+        "main": "models/main.json",
+        "arm": "models/arm.json"
+      },
+      "animation": {
+        "main": "animations/main.animation.json",
+        "slashblade": "animations/slashblade.animation.json",
+        "arm": "animations/arm.animation.json",
+        "tlm": "animations/tlm.animation.json",
+        "extra": "animations/extra.animation.json",
+        "tac": "animations/tac.animation.json"
+      },
+      "animation_controllers": [
+        "controller/controllers.json"
+      ],
+      "texture": [
+        {
+          "uv": "textures/default.png"
+        }
+      ]
+    }
+  }
+}
